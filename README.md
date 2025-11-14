@@ -38,5 +38,36 @@ Python, LangChain, FAISS, hashlib, pandas, OpenAI API (or Llama/Mistral).
 
 ---
 
+# Provenance-aware RAG Prototype (PoC)
+
+Proof-of-concept for a provenance-aware retrieval-augmented generation (RAG) pipeline targeting SOC-like datasets.
+This PoC tags each retrieved chunk with a cryptographic SHA-256 hash and measures the overhead of provenance anchoring.
+
+---
+
+## Quickstart (local, minimal)
+
+**Prereqs**
+- Python 3.12.x
+- `venv` or similar
+- `git`, `pip`
+
+```bash
+# clone once (if not already)
+git clone https://github.com/ShrawantiA/provenance-aware-RAG-poc.git
+cd provenance-aware-RAG-poc
+
+# create & activate a venv (Mac / Linux)
+python -m venv .venv
+source .venv/bin/activate
+
+# install
+pip install -r requirements.txt
+
+# Run the key notebook interactively:
+jupyter lab   # then open notebooks/provenance_poc.ipynb
+
+---
+
 *Author:* Shrawanti Anabattula  
 *Date:* October 2025  
