@@ -1,0 +1,6 @@
+langchain
+faiss-cpu
+numpy
+pandas
+tiktoken
+openai
